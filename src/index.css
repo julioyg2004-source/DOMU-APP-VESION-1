@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #04161b;
+  --color-surface-dim: #04161b;
+  --color-surface-bright: #2a3c42;
+  --color-surface-container-lowest: #011016;
+  --color-surface-container-low: #0c1e24;
+  --color-surface-container: #102B33;
+  --color-surface-container-high: #1b2c33;
+  --color-surface-container-highest: #26373e;
+  --color-on-surface: #d2e6ee;
+  --color-on-surface-variant: #bacac3;
+  --color-inverse-surface: #d2e6ee;
+  --color-inverse-on-surface: #213339;
+  --color-outline: #84948e;
+  --color-outline-variant: #3b4a44;
+  --color-surface-tint: #1adfb7;
+  --color-primary: #4bfad0;
+  --color-on-primary: #00382c;
+  --color-primary-container: #11ddb5;
+  --color-on-primary-container: #005c4a;
+  --color-secondary: #98dd2f;
+  --color-secondary-container: #7ec002;
+  --color-accent-mint: #11DDB5;
+  --color-accent-lime: #ABF244;
+  --color-surface-deep: #081317;
+  --color-surface-canvas: #0D1F25;
+  --color-surface-elevated: #173B46;
+  --color-surface-glass: rgba(16, 43, 51, 0.75);
+  --color-text-primary: #F2F7F7;
+  --color-text-secondary: #8EA6AC;
+  --color-text-muted: #526B72;
+  --color-state-danger: #FF4D4D;
+  --color-state-warning: #FFAA2C;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #04161b;
+    color: #d2e6ee;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 16px);
+  }
+  
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

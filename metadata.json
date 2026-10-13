@@ -1,0 +1,6 @@
+{
+  "name": "DOMU - Servicios Certificados del Hogar",
+  "description": "Plataforma de servicios para el hogar de alta confianza, validación biométrica con DNI, tracking en vivo y garantías oficiales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
