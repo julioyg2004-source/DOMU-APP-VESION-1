@@ -1,4 +1,4 @@
-export type ScreenType = 
+export type ScreenType =
   | 'splash'
   | 'auth'
   | 'services'
@@ -79,3 +79,24 @@ export interface ChatMessage {
   time: string;
   status?: 'sent' | 'delivered' | 'read';
 }
+
+/** Usuario de sesión (cliente) */
+export interface SessionUser {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  loggedInAt: string;
+}
+
+/** Datos de la cotización enviada por el cliente */
+export interface QuoteRequest {
+  categoryId: string;
+  categoryName: string;
+  categoryIcon: string;
+  price: number;
+  mode: string;
+  payment: string;
+}
+
+export type HomeFilter = 'all' | 'urgencias' | 'kyc' | 'cercanos';
